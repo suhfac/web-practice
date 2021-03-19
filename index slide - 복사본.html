@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>서보영 도서관</title>
+    <link rel="shortcut icon" href="/img/favicon/f01.png?" type="img/x-icon">
+    <link id= "favicon" rel="icon" href="#" type="img/x-icon">
+    <!--...-->
+
+    <script>
+      // favicon
+        var faviconRoute = '/img/favicon/';
+        var faviconNames = ['f01.png', 'f02.png', 'f03.png', 'f04.png', 'f05.png',
+                        'f06.png', 'f07.png', 'f08.png', 'f09.png', 'f10.png']; 
+                        // <!--파일이름은 짧게 변경했다-->
+    
+        var idx = 0;
+    
+        setInterval(func, 200);
+    
+        function func() {
+            document.querySelector("#favicon").setAttribute('href', faviconRoute + faviconNames[idx++]);
+            idx %= faviconNames.length;
+        }
+    </script>
+    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      
+    </style>
+</head>
+<body>
+<header>
+<div id="header">
+    <div class="basic_menu">
+        <div class="b-menu1">
+            <!-- style="border:1px solid #d3d3d3;border-right: 1;" -->
+            <li>홈으로</li>
+        </div>
+        <div class="icon-sns">
+            <li><img src="img/icon-youtube.png" width="40px"></li>
+            <li><img src="img/icon-nav.png" width="40px"></li>
+            <li><img src="img/icon-facebook.webp" width="40px"></li>
+            <li><img src="img/icon-insta.png" width="40px"></li>
+        </div>
+        <div class="b-menu2">
+            <!-- style="border:1px solid #d3d3d3;border-right: 1;" -->
+                <li>English</li>
+                <li>사이트맵</li>
+                <li>로그인</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+    <div class="menu">
+        <div class="logo"><a href="index.html"><img src="img/logo.png"></a>     </div>
+        <div class="nav">
+            <li><a href="#"><img src="img/333.svg" width="30px" style="
+                padding-top: 5px;"></a> </li>
+            <li><a href="#">도서관안내</a></li>
+            <li><a href="#">프로그램</a></li>
+            <li><a href="#">자료검색</a></li>
+        </div>
+    </div>
+
+    <div id="searching">
+    <div class="searching_wrap">
+        <div class="searching1">
+
+        </div>
+        <div class="searching2">
+            <img src="img/search-1.png">
+            <img src="img/search-2.png">
+        </div>
+        <div class="attend_day">            
+            <img src="img/attand_month.png">
+            <ul>
+            <li>13</li>
+            <li>20</li>
+            <li>21</li>
+            <li>28</li>
+            </ul>
+        </div>
+    </div></div>
+</header>
+
+
+<div id="main-banner">
+
+    <div class="main-banner_wrap">
+        <div class="section">
+            <input type="radio" name="slide" id="slide01" checked>
+            <input type="radio" name="slide" id="slide02">
+            <input type="radio" name="slide" id="slide03">
+            <input type="radio" name="slide" id="slide04">
+            <div class="slide-wrap">
+                <ul class="slidelist">
+                    <li>
+                        <a>
+                            <label for="slide04" class="left"></label>
+                            <div class="textbox">
+                                <h3>검증된 자기계발 도서</h3>
+                                <p>자신을 업그레이드 하자!</p>
+                            </div>
+                            <img src="img/slide01.png">
+                            <label for="slide02" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide01" class="left"></label>
+                            <div class="textbox">
+                                <h3>아트북 컬렉션</h3>
+                                <p>아름다움으로 마음을 만들어 갑니다.</p>
+                            </div>
+                            <img src="img/slide02.png">
+                            <label for="slide03" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide02" class="left"></label>
+                            <div class="textbox">
+                                <h3>Artro 견학 프로그램</h3>
+                                <p>국립어린이청소년 도서관 견학</p>
+                            </div>
+                            <img src="img/slide03.png">
+                            <label for="slide04" class="right"></label>
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            <label for="slide03" class="left"></label>
+                            <div class="textbox">
+                                <h3>동화책 만들기 실습 프로그램</h3>
+                                <p>직접 만들어가는 동화책 프로그램에 지원하세요.</p>
+                            </div>
+                            <img src="img/slide04.png">
+                            <label for="slide01" class="right"></label>
+                        </a>
+                    </li>
+                </ul>
+                <!-- 페이징 -->
+		<ul class="slide-pagelist">
+			<li><label for="slide01"></label></li>
+			<li><label for="slide02"></label></li>
+			<li><label for="slide03"></label></li>
+			<li><label for="slide04"></label></li>
+		</ul>
+	</div>
+            </div>
+        </div>
+
+
+
+<!--         
+
+        <div class="main-banner_small">
+           
+
+            <div class="section">
+                <input type="radio" name="slide" id="slide01" checked>
+                <input type="radio" name="slide" id="slide02">
+                <input type="radio" name="slide" id="slide03">
+                <input type="radio" name="slide" id="slide04">
+                <div class="slide-wrap">
+                    <ul class="slidelist">
+                        <li>
+                            <a>
+                                <label for="slide04" class="left"></label>
+                                <div class="textbox">
+                                    <h3>첫번째 슬라이드</h3>
+                                    <p>첫번째 슬라이드 입니다.</p>
+                                </div>
+                                <img src="img/slide01.png">
+                                <label for="slide02" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide01" class="left"></label>
+                                <div class="textbox">
+                                    <h3>두번째 슬라이드</h3>
+                                    <p>두번째 슬라이드 입니다.</p>
+                                </div>
+                                <img src="img/slide.jpg">
+                                <label for="slide03" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide02" class="left"></label>
+                                <div class="textbox">
+                                    <h3>세번째 슬라이드</h3>
+                                    <p>세번째 슬라이드 입니다.</p>
+                                </div>
+                                <img src="img/slide.jpg">
+                                <label for="slide04" class="right"></label>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <label for="slide03" class="left"></label>
+                                <div class="textbox">
+                                    <h3>네번째 슬라이드</h3>
+                                    <p>네번째 슬라이드 입니다.</p>
+                                </div>
+                                <img src="img/slide.jpg">
+                                <label for="slide01" class="right"></label>
+                            </a>
+                        </li>
+                    </ul>
+                  
+            <ul class="slide-pagelist">
+                <li><label for="slide01"></label></li>
+                <li><label for="slide02"></label></li>
+                <li><label for="slide03"></label></li>
+                <li><label for="slide04"></label></li>
+            </ul>
+        </div>
+
+
+
+
+ -->
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<div id="icons">
+
+    <div class="icons_wrap">
+        
+        <div class="icon_wrap">
+            <div class="icon_icon">
+                <img src="img/icon1.png" width="100px">
+            </div>
+            <div class="icon_text">
+            도서관견학
+            </div>
+        </div>
+        <div class="icon_wrap">
+            <div class="icon_icon">
+                <img src="img/icon2.png" height="100px" style="padding-top: 4px;">
+            </div>
+            <div class="icon_text">
+                방문예약
+            </div>
+        </div>
+        <div class="icon_wrap">
+            <div class="icon_icon">
+                <img src="img/icon3.png" width="100px"  style="padding-top: 2px;">
+            </div>
+            <div class="icon_text">
+            도서관이야기
+            </div>
+        </div>
+        <div class="icon_wrap">
+            <div class="icon_icon">
+                <img src="img/icon4.png" height="100px" style="padding-top: 4px;">
+            </div>
+            <div class="icon_text">
+            봉사활동
+            </div>
+        </div>
+        <div class="icon_wrap">
+            <div class="icon_icon">
+                <img src="img/icon5.png" height="100px" style="padding-top: 4px;">
+            </div>
+            <div class="icon_text">
+            동화제작
+            </div>
+        </div>
+        <div class="icon_wrap">
+
+        <a href="info.html">
+            <div class="icon_icon">
+                <img src="img/icon6.png" height="110px" style="padding-top: 4px;">
+            </div>
+            <div class="icon_text">
+            이용안내
+            </div>
+        </a>
+
+        </div>
+    </div>
+</div>
+
+<div id="programs">
+
+    <div class="programs_wrap">
+        <div class="programs_app">
+<div class="programs_app_title">
+프로그램 신청
+<hr style="color: #444;margin-top: 10px;">
+</div>
+<div class="programs_app_list">
+    <li><div class="programs_app_kind">일반</div>
+        <div class="programs_app_kind">일반</div>
+        <div class="programs_app_kind1">특수</div>
+        <div class="programs_app_kind">일반</div>
+    </li>
+    <li>
+        <div class="programs_app_text">동화책 만들기 기초</div>
+        <div class="programs_app_text">비주얼씽킹 독서록</div>
+        <div class="programs_app_text">동화책 만들기 고급</div>
+        <div class="programs_app_text">마인드맵 기초반</div>        
+    </li>
+    <li>
+        <div class="programs_app_btn"><a href="http://naver.me/GWF5jirF" target="_blank">접수</a></div>
+        <div class="programs_app_btn"><a href="http://naver.me/GWF5jirF" target="_blank">접수</a></div>
+        <div class="programs_app_btn"><a href="http://naver.me/GWF5jirF" target="_blank">접수</a></div>
+        <div class="programs_app_btn"><a href="http://naver.me/GWF5jirF" target="_blank">접수</a></div>
+    </li>
+    
+</div>
+        </div>
+        <div class="programs_notice">
+            <div class="programs_notice_title">
+                공지사항 보도자료 탭맨글
+                <hr style="color: #444;margin-top: 10px;">
+                </div>
+                <div class="programs_notice_list">
+                    
+                </div>
+        </div>
+    </div>
+</div>
+
+<div id="recommende">
+
+    <div class="recommende_wrap">
+        <div class="recommende_from">
+<br>도서 관장이<h3>박수치는</h3>
+<h2>추천도서</h2>
+        </div>
+        <div class="recommende_books">
+<div class="books_wrap">
+    <div class="bookimg">
+        <img src="img/rbook01.jpg" height="160px">
+    </div>
+    <div class="booktitle">핑크펭귄<br>마케팅을 한다면 필수!!</div>
+</div>
+<div class="books_wrap">
+    <div class="bookimg">
+        <img src="img/rbook02.jpg" height="160px"></div>
+    <div class="booktitle">깊은 인생<br>나의 인생을 살게 해준 책</div>
+</div>
+<div class="books_wrap">
+    <div class="bookimg">
+        <img src="img/rbook03.webp" height="160px"></div>
+    <div class="booktitle">오토코마에 두부<br>스토리 마케팅에 진심인!!</div>
+</div>
+<div class="books_wrap">
+    <div class="bookimg">
+        <img src="img/rbook04.jpg" height="160px"></div>
+    <div class="booktitle">오래가는 것들의 비밀<br><span style="font-size: smaller;">아름다운 디자이너의 큰 생각&#9829;</span></div>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div id="footer">
+<div class="footer_legal">
+    <ul>
+                <li>개인정보방침</li>
+                <li>도서관관련법령</li>
+                <li>찾아오시는길</li>
+                <li>도서공동구매가이드</li>
+                <li>유관기관사이트</li>
+            </ul>
+            </div>
+        <div class="footer_wrap">
+            
+            <div class="footer_mid">
+    
+                <div class="footer_logo">
+                    <img src="img/logo-footer.png" style="padding-top: 4px;">
+                </div>
+                <div class="footer_info">
+                    <p>사업자등록 : 123-45-67778 | 사업자소재지 : 경기도 고양시 덕양구 그 어디쯤<br>
+                        전화번호 : 02-3413-4800 | 팩스번호 : 02-3413-4719<br>
+                        e-mail : suh.voyoung@gmail.com
+                    
+                    </p>
+                </div>
+            <div class="footer_copy">
+                <p>Copyright 2021. vozzang.com All pictures cannot be copied without permission. </p>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>
